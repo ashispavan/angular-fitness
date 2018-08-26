@@ -1,0 +1,12 @@
+<section>
+  <form class="signupForm">
+    <mat-form-field>
+      <input type="email" matInput placeholder="Enter your email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="password" placeholder="Input">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Sign Up</button>
+  </form>
+</section>
